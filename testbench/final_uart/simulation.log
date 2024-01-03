@@ -7,3 +7,57 @@ Test Started
 FIR Test started
 tx data bit index 0: 1 at              3281229
 tx data bit index 1: 1 at              3385395
+tx data bit index 2: 1 at              3489561
+tx data bit index 3: 1 at              3593727
+tx data bit index 4: 0 at              3697893
+tx data bit index 5: 0 at              3802059
+tx data bit index 6: 0 at              3906225
+tx data bit index 7: 0 at              4010391
+tx complete 1
+tx data bit index 0: 1 at              4531221
+tx data bit index 1: 0 at              4635387
+tx data bit index 2: 1 at              4739553
+tx data bit index 3: 1 at              4843719
+rx data bit index 0: 1 at 	             4843719
+rx data bit index 1: 1 at 	             4947885
+tx data bit index 4: 1 at              4947885
+tx data bit index 5: 1 at              5052051
+rx data bit index 2: 1 at 	             5052051
+rx data bit index 3: 1 at 	             5156217
+tx data bit index 6: 0 at              5156217
+tx data bit index 7: 0 at              5260383
+rx data bit index 4: 0 at 	             5260383
+rx data bit index 5: 0 at 	             5364549
+tx complete 2
+rx data bit index 6: 0 at 	             5468715
+rx data bit index 7: 0 at 	             5572881
+transmission passed; recevied word  15 at              5677047
+tx data bit index 0: 1 at              5781213
+tx data bit index 1: 1 at              5885379
+tx data bit index 2: 1 at              5989545
+tx data bit index 3: 1 at              6093711
+tx data bit index 4: 0 at              6197877
+tx data bit index 5: 0 at              6302043
+tx data bit index 6: 0 at              6406209
+tx data bit index 7: 0 at              6510375
+rx data bit index 0: 1 at 	             6510375
+rx data bit index 1: 0 at 	             6614541
+tx complete 1
+rx data bit index 2: 1 at 	             6718707
+rx data bit index 3: 1 at 	             6822873
+rx data bit index 4: 1 at 	             6927039
+FIR Test passed
+
+MM Test started
+rx data bit index 5: 1 at 	             7031205
+tx data bit index 0: 1 at              7031205
+tx data bit index 1: 0 at              7135371
+rx data bit index 6: 0 at 	             7135371
+rx data bit index 7: 0 at 	             7239537
+tx data bit index 2: 1 at              7239537
+tx data bit index 3: 1 at              7343703
+transmission passed; recevied word  61 at              7343703
+tx data bit index 4: 1 at              7447869
+tx data bit index 5: 1 at              7552035
+tx data bit index 6: 0 at              7656201
+tx data bit index 7: 0 at              7760367

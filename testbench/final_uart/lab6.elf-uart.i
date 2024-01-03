@@ -1673,12 +1673,16 @@ char __attribute__ ( ( section ( ".mprj" ) ) ) uart_read_char()
 int __attribute__ ( ( section ( ".mprj" ) ) ) uart_read()
 {
     int num;
-    if(((((*(volatile uint32_t*)0x30000008)>>5) | 0) == 0) && ((((*(volatile uint32_t*)0x30000008)>>4) | 0) == 0)){
-        for(int i = 0; i < 1; i++)
+
+
+
+
+
+
+    for(int i = 0; i < 1; i++)
             asm volatile ("nop");
 
-        num = (*(volatile uint32_t*)0x30000000);
-    }
+    num = (*(volatile uint32_t*)0x30000000);
 
     return num;
 }

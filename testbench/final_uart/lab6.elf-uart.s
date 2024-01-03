@@ -279,52 +279,35 @@ uart_read:
 	.cfi_offset 8, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 2 45 12
-	li	a5,805306368
-	addi	a5,a5,8
-	lw	a5,0(a5)
-	.loc 2 45 44
-	srli	a5,a5,5
-	.loc 2 45 7
-	bne	a5,zero,.L18
-	.loc 2 45 67 discriminator 1
-	li	a5,805306368
-	addi	a5,a5,8
-	lw	a5,0(a5)
-	.loc 2 45 99 discriminator 1
-	srli	a5,a5,4
-	.loc 2 45 60 discriminator 1
-	bne	a5,zero,.L18
 .LBB3:
-	.loc 2 46 17
-	sw	zero,-24(s0)
-	.loc 2 46 9
-	j	.L19
-.L20:
-	.loc 2 47 13 discriminator 3
+	.loc 2 51 13
+	sw	zero,-20(s0)
+	.loc 2 51 5
+	j	.L18
+.L19:
+	.loc 2 52 13 discriminator 3
  #APP
-# 47 "uart.c" 1
+# 52 "uart.c" 1
 	nop
 # 0 "" 2
-	.loc 2 46 32 discriminator 3
+	.loc 2 51 28 discriminator 3
  #NO_APP
-	lw	a5,-24(s0)
+	lw	a5,-20(s0)
 	addi	a5,a5,1
-	sw	a5,-24(s0)
-.L19:
-	.loc 2 46 26 discriminator 1
-	lw	a5,-24(s0)
-	ble	a5,zero,.L20
-.LBE3:
-	.loc 2 49 16
-	li	a5,805306368
-	lw	a5,0(a5)
-	.loc 2 49 13
 	sw	a5,-20(s0)
 .L18:
-	.loc 2 52 12
+	.loc 2 51 22 discriminator 1
 	lw	a5,-20(s0)
-	.loc 2 53 1
+	ble	a5,zero,.L19
+.LBE3:
+	.loc 2 54 12
+	li	a5,805306368
+	lw	a5,0(a5)
+	.loc 2 54 9
+	sw	a5,-24(s0)
+	.loc 2 56 12
+	lw	a5,-24(s0)
+	.loc 2 57 1
 	mv	a0,a5
 	lw	s0,28(sp)
 	.cfi_restore 8
@@ -416,18 +399,18 @@ uart_read:
 	.4byte	0x6a
 	.byte	0x2
 	.byte	0x91
-	.byte	0x6c
+	.byte	0x68
 	.byte	0x5
 	.4byte	.LBB3
 	.4byte	.LBE3-.LBB3
 	.byte	0x2
 	.string	"i"
-	.byte	0x2e
-	.byte	0x11
+	.byte	0x33
+	.byte	0xd
 	.4byte	0x6a
 	.byte	0x2
 	.byte	0x91
-	.byte	0x68
+	.byte	0x6c
 	.byte	0
 	.byte	0
 	.byte	0x4

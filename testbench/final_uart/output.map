@@ -40,24 +40,24 @@ Linker script and memory map
                 0x00000000100003e4                print
                 0x0000000010000488                main
 
-.mprj           0x0000000010000d04      0x1ec
- .mprj          0x0000000010000d04      0x1ec lab6.elf-uart.o
+.mprj           0x0000000010000d04      0x1c4
+ .mprj          0x0000000010000d04      0x1c4 lab6.elf-uart.o
                 0x0000000010000d04                uart_write
                 0x0000000010000d4c                uart_write_char
                 0x0000000010000db4                uart_write_string
                 0x0000000010000e08                uart_read_char
                 0x0000000010000e7c                uart_read
 
-.rodata         0x0000000010000ef0        0x0
-                0x0000000010000ef0                . = ALIGN (0x8)
- *fill*         0x0000000010000ef0        0x0 
-                0x0000000010000ef0                _frodata = .
+.rodata         0x0000000010000ec8        0x0
+                0x0000000010000ec8                . = ALIGN (0x8)
+ *fill*         0x0000000010000ec8        0x0 
+                0x0000000010000ec8                _frodata = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  *(.rodata1)
-                0x0000000010000ef0                . = ALIGN (0x8)
-                0x0000000010000ef0                _erodata = .
+                0x0000000010000ec8                . = ALIGN (0x8)
+                0x0000000010000ec8                _erodata = .
 
-.data           0x0000000000000000      0x108 load address 0x0000000010000ef0
+.data           0x0000000000000000      0x108 load address 0x0000000010000ec8
                 0x0000000000000000                . = ALIGN (0x8)
                 0x0000000000000000                _fdata = .
  *(.data .data.* .gnu.linkonce.d.*)
@@ -83,7 +83,7 @@ Linker script and memory map
  *fill*         0x0000000000000104        0x4 
                 0x0000000000000108                _edata = .
 
-.bss            0x0000000000000108       0x98 load address 0x0000000010000ff8
+.bss            0x0000000000000108       0x98 load address 0x0000000010000fd0
                 0x0000000000000108                . = ALIGN (0x8)
                 0x0000000000000108                _fbss = .
  *(.dynsbss)
@@ -107,7 +107,7 @@ Linker script and memory map
                 0x00000000000001a0                _ebss = .
                 0x00000000000001a0                _end = .
 
-.mprjram        0x0000000038000000      0x598 load address 0x0000000010000ff8
+.mprjram        0x0000000038000000      0x598 load address 0x0000000010000fd0
                 0x0000000038000000                . = ALIGN (0x8)
                 0x0000000038000000                _fsram = .
  *libgcc.a:*(.text .text.*)
@@ -124,10 +124,10 @@ Linker script and memory map
                 0x00000000380004f4                sort
                 0x0000000038000564                qsort
                 0x0000000000000600                PROVIDE (_fstack = (ORIGIN (dff2) + LENGTH (dff2)))
-                0x0000000010000ef0                PROVIDE (_fdata_rom = LOADADDR (.data))
+                0x0000000010000ec8                PROVIDE (_fdata_rom = LOADADDR (.data))
                 [!provide]                        PROVIDE (_edata_rom = (LOADADDR (.data) + SIZEOF (.data)))
                 0x0000000038000598                PROVIDE (_esram = (ORIGIN (mprjram) + SIZEOF (.mprjram)))
-                0x0000000010000ff8                PROVIDE (_esram_rom = LOADADDR (.mprjram))
+                0x0000000010000fd0                PROVIDE (_esram_rom = LOADADDR (.mprjram))
 LOAD lab6.elf-crt0_vex.o
 LOAD lab6.elf-isr.o
 LOAD lab6.elf-fir.o
@@ -143,7 +143,7 @@ END GROUP
 LOAD /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a
 OUTPUT(lab6.elf elf32-littleriscv)
 
-.rela.dyn       0x0000000038000598        0x0 load address 0x0000000010001590
+.rela.dyn       0x0000000038000598        0x0 load address 0x0000000010001568
  .rela.text     0x0000000038000598        0x0 lab6.elf-crt0_vex.o
 
 .riscv.attributes
@@ -174,15 +174,15 @@ OUTPUT(lab6.elf elf32-littleriscv)
  .comment       0x000000000000001b       0x1c lab6.elf-uart.o
  .comment       0x000000000000001b       0x1c lab6.elf-main.o
 
-.debug_line     0x0000000000000000     0x163a
+.debug_line     0x0000000000000000     0x15fe
  .debug_line    0x0000000000000000      0x20a lab6.elf-crt0_vex.o
  .debug_line    0x000000000000020a      0x14f lab6.elf-isr.o
  .debug_line    0x0000000000000359      0x20f lab6.elf-fir.o
  .debug_line    0x0000000000000568      0x16f lab6.elf-matmul.o
  .debug_line    0x00000000000006d7      0x165 lab6.elf-qsort.o
- .debug_line    0x000000000000083c      0x25e lab6.elf-uart.o
- .debug_line    0x0000000000000a9a      0xb26 lab6.elf-main.o
- .debug_line    0x00000000000015c0       0x7a /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
+ .debug_line    0x000000000000083c      0x222 lab6.elf-uart.o
+ .debug_line    0x0000000000000a5e      0xb26 lab6.elf-main.o
+ .debug_line    0x0000000000001584       0x7a /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
 
 .debug_line_str
                 0x0000000000000000      0x1ca
