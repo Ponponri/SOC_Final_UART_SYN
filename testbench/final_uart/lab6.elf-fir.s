@@ -6,7 +6,7 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.file 0 "/home/ponponri/Desktop/SoC_Final_UART_SYN/testbench/final_uart" "fir.c"
+	.file 0 "/home/ponponri/Desktop/shared_folder/SoC_Final_UART_SYN/testbench/final_uart" "fir.c"
 	.globl	taps
 	.data
 	.align	2
@@ -811,5 +811,5 @@ fir:
 .LASF0:
 	.string	"fir.c"
 .LASF1:
-	.string	"/home/ponponri/Desktop/SoC_Final_UART_SYN/testbench/final_uart"
+	.string	"/home/ponponri/Desktop/shared_folder/SoC_Final_UART_SYN/testbench/final_uart"
 	.ident	"GCC: (g1ea978e3066) 12.1.0"

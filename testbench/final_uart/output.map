@@ -185,29 +185,29 @@ OUTPUT(lab6.elf elf32-littleriscv)
  .debug_line    0x00000000000015c0       0x7a /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
 
 .debug_line_str
-                0x0000000000000000      0x1bc
+                0x0000000000000000      0x1ca
  .debug_line_str
-                0x0000000000000000       0x59 lab6.elf-crt0_vex.o
+                0x0000000000000000       0x67 lab6.elf-crt0_vex.o
  .debug_line_str
-                0x0000000000000059       0x8c lab6.elf-isr.o
-                                        0x125 (size before relaxing)
+                0x0000000000000067       0x8c lab6.elf-isr.o
+                                        0x141 (size before relaxing)
  .debug_line_str
-                0x00000000000000e5        0xc lab6.elf-fir.o
-                                         0x96 (size before relaxing)
+                0x00000000000000f3        0xc lab6.elf-fir.o
+                                         0xb2 (size before relaxing)
  .debug_line_str
-                0x00000000000000f1       0x12 lab6.elf-matmul.o
-                                         0xa2 (size before relaxing)
+                0x00000000000000ff       0x12 lab6.elf-matmul.o
+                                         0xbe (size before relaxing)
  .debug_line_str
-                0x0000000000000103       0x10 lab6.elf-qsort.o
-                                         0x9e (size before relaxing)
+                0x0000000000000111       0x10 lab6.elf-qsort.o
+                                         0xba (size before relaxing)
  .debug_line_str
-                0x0000000000000113        0x7 lab6.elf-uart.o
-                                         0xee (size before relaxing)
+                0x0000000000000121        0x7 lab6.elf-uart.o
+                                        0x10a (size before relaxing)
  .debug_line_str
-                0x000000000000011a        0xe lab6.elf-main.o
-                                        0x120 (size before relaxing)
+                0x0000000000000128        0xe lab6.elf-main.o
+                                        0x13c (size before relaxing)
  .debug_line_str
-                0x0000000000000128       0x94 /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
+                0x0000000000000136       0x94 /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
 
 .debug_info     0x0000000000000000      0x8df
  .debug_info    0x0000000000000000       0x25 lab6.elf-crt0_vex.o
@@ -247,21 +247,21 @@ OUTPUT(lab6.elf elf32-littleriscv)
  .debug_aranges
                 0x0000000000000128       0x20 /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
 
-.debug_str      0x0000000000000000      0x32a
- .debug_str     0x0000000000000000       0x65 lab6.elf-crt0_vex.o
- .debug_str     0x0000000000000065      0x139 lab6.elf-isr.o
+.debug_str      0x0000000000000000      0x338
+ .debug_str     0x0000000000000000       0x73 lab6.elf-crt0_vex.o
+ .debug_str     0x0000000000000073      0x139 lab6.elf-isr.o
                                         0x17a (size before relaxing)
- .debug_str     0x000000000000019e       0x55 lab6.elf-fir.o
+ .debug_str     0x00000000000001ac       0x55 lab6.elf-fir.o
                                          0xb9 (size before relaxing)
- .debug_str     0x00000000000001f3       0x14 lab6.elf-matmul.o
+ .debug_str     0x0000000000000201       0x14 lab6.elf-matmul.o
                                          0x78 (size before relaxing)
- .debug_str     0x0000000000000207       0x1b lab6.elf-qsort.o
+ .debug_str     0x0000000000000215       0x1b lab6.elf-qsort.o
                                          0x84 (size before relaxing)
- .debug_str     0x0000000000000222       0x31 lab6.elf-uart.o
+ .debug_str     0x0000000000000230       0x31 lab6.elf-uart.o
                                         0x151 (size before relaxing)
- .debug_str     0x0000000000000253       0x3a lab6.elf-main.o
+ .debug_str     0x0000000000000261       0x3a lab6.elf-main.o
                                         0x174 (size before relaxing)
- .debug_str     0x000000000000028d       0x9d /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
+ .debug_str     0x000000000000029b       0x9d /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
                                          0xa9 (size before relaxing)
 
 .debug_frame    0x0000000000000000      0x4d4

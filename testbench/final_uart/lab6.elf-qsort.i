@@ -1,5 +1,5 @@
 # 0 "qsort.c"
-# 1 "/home/ponponri/Desktop/SoC_Final_UART_SYN/testbench/final_uart//"
+# 1 "/home/ponponri/Desktop/shared_folder/SoC_Final_UART_SYN/testbench/final_uart//"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "qsort.c"
