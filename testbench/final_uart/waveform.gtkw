@@ -1,0 +1,104 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Jan  3 14:32:09 2024
+[*]
+[dumpfile] "/home/ponponri/Desktop/SoC_Final_UART_SYN/testbench/final_uart/lab6.vcd"
+[dumpfile_mtime] "Wed Jan  3 14:28:20 2024"
+[dumpfile_size] 498695183
+[savefile] "/home/ponponri/Desktop/SoC_Final_UART_SYN/testbench/final_uart/waveform.gtkw"
+[timestart] 1820400000
+[size] 2466 1220
+[pos] -1 -1
+*-26.000000 1921300000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] uart_tb.
+[treeopen] uart_tb.uut.
+[treeopen] uart_tb.uut.mprj.
+[treeopen] uart_tb.uut.mprj.uart.
+[treeopen] uart_tb.uut.padframe.
+[treeopen] uart_tb.uut.soc.
+[treeopen] uart_tb.uut.soc.core.
+[treeopen] uart_tb.uut.soc.core.VexRiscv.
+[sst_width] 574
+[signals_width] 630
+[sst_expanded] 1
+[sst_vpaned_height] 922
+@200
+-
+-rx
+@28
+uart_tb.uut.mprj.uart.receive.busy
+uart_tb.uut.mprj.uart.receive.clk
+@22
+uart_tb.uut.mprj.uart.receive.clk_cnt[31:0]
+uart_tb.uut.mprj.uart.receive.clk_div[31:0]
+@28
+uart_tb.uut.mprj.uart.receive.frame_err
+uart_tb.uut.mprj.uart.receive.irq
+uart_tb.uut.mprj.uart.receive.rst_n
+uart_tb.uut.mprj.uart.receive.rx
+@22
+uart_tb.uut.mprj.uart.receive.rx_data[7:0]
+@28
+uart_tb.uut.mprj.uart.receive.rx_finish
+uart_tb.uut.mprj.uart.receive.rx_index[2:0]
+@22
+uart_tb.uut.mprj.uart.receive.state[3:0]
+@200
+-
+-rx fifo
+@28
+uart_tb.uut.mprj.uart.rx_fifo.clk
+uart_tb.uut.mprj.uart.rx_fifo.cnt[1:0]
+@22
+uart_tb.uut.mprj.uart.rx_fifo.data_i[7:0]
+uart_tb.uut.mprj.uart.rx_fifo.data_o[7:0]
+@28
+uart_tb.uut.mprj.uart.rx_fifo.end_ptr[1:0]
+uart_tb.uut.mprj.uart.rx_fifo.isEmpty
+uart_tb.uut.mprj.uart.rx_fifo.isFull
+uart_tb.uut.mprj.uart.rx_fifo.pop
+uart_tb.uut.mprj.uart.rx_fifo.push
+uart_tb.uut.mprj.uart.rx_fifo.rst_n
+uart_tb.uut.mprj.uart.rx_fifo.start_ptr[1:0]
+@200
+-
+-tx
+@28
+uart_tb.uut.mprj.uart.transmission.busy
+uart_tb.uut.mprj.uart.transmission.clear_req
+uart_tb.uut.mprj.uart.transmission.clk
+@22
+uart_tb.uut.mprj.uart.transmission.clk_cnt[31:0]
+uart_tb.uut.mprj.uart.transmission.clk_div[31:0]
+@28
+uart_tb.uut.mprj.uart.transmission.detect_posedge_start[1:0]
+uart_tb.uut.mprj.uart.transmission.rst_n
+@22
+uart_tb.uut.mprj.uart.transmission.state[3:0]
+@28
+uart_tb.uut.mprj.uart.transmission.tx
+@22
+uart_tb.uut.mprj.uart.transmission.tx_data[7:0]
+@28
+uart_tb.uut.mprj.uart.transmission.tx_index[2:0]
+uart_tb.uut.mprj.uart.transmission.tx_start
+@200
+-
+@201
+-tx fifo
+@28
+uart_tb.uut.mprj.uart.tx_fifo.clk
+uart_tb.uut.mprj.uart.tx_fifo.cnt[1:0]
+@22
+uart_tb.uut.mprj.uart.tx_fifo.data_i[7:0]
+uart_tb.uut.mprj.uart.tx_fifo.data_o[7:0]
+@28
+uart_tb.uut.mprj.uart.tx_fifo.end_ptr[1:0]
+uart_tb.uut.mprj.uart.tx_fifo.isEmpty
+uart_tb.uut.mprj.uart.tx_fifo.isFull
+uart_tb.uut.mprj.uart.tx_fifo.pop
+uart_tb.uut.mprj.uart.tx_fifo.push
+uart_tb.uut.mprj.uart.tx_fifo.rst_n
+uart_tb.uut.mprj.uart.tx_fifo.start_ptr[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
